@@ -80,10 +80,12 @@ export default function Home(props: HomeProps) {
 export const getServerSideProps = async() => {
   const poolCountResponse = await api.get('pools/count')
   const guessCountResponse = await api.get('guesses/count')
+  
 
   return { 
     props: {
       poolCount: poolCountResponse.data.count,
+      guessCount: guessCountResponse.data.count,
     }
   }
 }
