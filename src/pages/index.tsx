@@ -30,7 +30,7 @@ export default function Home(props: HomeProps) {
 
         <form className='mt-10 flex gap-2'>
           <input
-            className='flex-1 px-6 py-4 rounded bg-gray-800 border border-gray-600 text-sm'
+            className='flex-1 px-6 py-4 rounded bg-gray-800 border border-gray-600 text-sm text-gray-100'
             type="text" 
             required 
             placeholder='Qual o nome do seu bolão?'
